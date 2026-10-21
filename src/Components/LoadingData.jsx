@@ -10,7 +10,7 @@ function LoadingData(){
         try{
             const promise = await fetch("https://jsonplaceholder.typicode.com/users");
             const json = await promise.json();
-            console.log(json);
+            // console.log(json);
             setData(json);                    
         } catch (error) {
             console.error("Errore di caricamento dati")
